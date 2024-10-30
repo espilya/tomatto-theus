@@ -77,7 +77,7 @@ def read_metrics(hosts):
 #    print(cmdfull)
     result = subprocess.run(cmdfull, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     r = result.stdout.decode('utf-8')
-    print(r)
+    #print(r)
     parsed_r = parser(r)
 #    print(parsed_r)
     return parsed_r

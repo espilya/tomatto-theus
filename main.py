@@ -115,6 +115,7 @@ def main():
                 if len(running_hosts) > 0:
                     metrics = read_metrics(running_hosts)
                     for job in jobsManager.get_running_jobs():
+                        print(job)
                         if '[' in job.host:
                             hosts = parse_hosts([job.host])
 #                            print(hosts)
